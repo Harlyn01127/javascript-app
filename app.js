@@ -1,7 +1,7 @@
 let loginForm = document.getElementById("userForm");
 
-loginForm.addEventListener("sumbit", (e) =>{
-e.preventDefault;
+loginForm.addEventListener("sumbit", function(event){
+event.preventDefault();
 
 let name = document.getElementById("name").value;
 let age = document.getElementById("age").value;
@@ -12,13 +12,10 @@ const user = {
     name: name,
     age: age,
     email: email,
-    hobbies: hobbies,
+    hobbies: hobbies
   };
 
-  const jsonOutput = JSON.stringify(user);
-  console.log(user);
-  console.log(JSON);
-  document.getElementById("jsonOutput").textContent = jsonOutput;
-  document.getElementById("userForm").reset();
-
+  const myJSON = JSON.stringify(user, null, 2);
+  document.getElementById("jsonOutput").innerHTML = user;
+  console.log("myJSON");
 });
