@@ -1,0 +1,53 @@
+body{
+    background-image: url(pngtree-hand-painted-abstract-black-and-white-watercolor-background-aesthetic-gray-backdrop-image_13652220.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+}
+form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    
+
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 50px;
+    
+}
+
+input{
+    border-radius: 5px;
+    background-color: rgba(190, 189, 187, 0.95);
+    font-size: 18px;
+}
+button{
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+pre{
+    
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.num2{
+ 
+    border-width: 1px;
+    padding: 15px;
+    margin: 25px;
+    box-sizing: border-box;
+}
+.num1{
+ margin: 25px;
+ text-align: center;
+
+}

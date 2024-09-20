@@ -1,24 +1,24 @@
-let loginForm = document.getElementById("userForm");
+document.getElementById("userForm").addEventListener("submit", function(event) {  
 
-loginForm.addEventListener("sumbit", (e) =>{
-e.preventDefault();
-
-let name = document.getElementById("name").value;
-let age = document.getElementById("age").value;
-let email = document.getElementById("email").value;
-let hobbies = document.getElementById("hobbies").value;
-
-const user = {
-    name: name,
-    age: age,
-    email: email,
-    hobbies: hobbies,
-  };
-
-  const jsonOutput = JSON.stringify(user);
-  console.log(user);
-  console.log(JSON);
-  document.getElementById("jsonOutput").textContent = jsonOutput;
-  document.getElementById("userForm").reset();
-
-});
+    event.preventDefault();  
+  
+  
+    const name = document.getElementById("name").value;  
+    const age = document.getElementById("age").value;  
+    const email = document.getElementById("email").value;  
+    const hobbies = document.getElementById("hobbies").value;
+    
+   
+    const userDetails = {  
+        name: name,  
+        age: age,  
+        email: email,  
+        hobbies: hobbies  
+    };  
+  
+  
+    const jsonOutput = JSON.stringify(userDetails, null, 2); 
+  
+  
+    document.getElementById('jsonOutput').textContent = jsonOutput;  
+  });
